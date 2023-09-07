@@ -1,0 +1,107 @@
+<html lang="en">
+<head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Document</title>
+     <link rel="stylesheet" href="style.css">
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+          integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+          crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+     
+</head>
+<body class=" ">
+     <div class="nav">
+          <div class="navHead">Tic tac toe</div>
+          <div class="welcome">Made by Tushar</div>
+          <div class="last">
+               <div class="code"><Button>Code</Button></div>
+               <div class="linkdin"> <a href="https://www.linkedin.com/in/tushar-panchal-/" target="_blank">Linkdin</a></div>
+               <div class="Github"><a href="https://github.com/Tushar0761" target="_blank"> Github</a></div>
+          </div>
+     </div>
+     <div class="heading  d-flex ">
+          <div class="playerBox d-flex bg-dark primary">
+               <div class="player1">
+                    <input type="text" name="player1" id="name1" value="Player 1" disabled>
+                  
+                    <button id="edit1">
+                         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-pencil-square"
+                              viewBox="0 0 16 16">
+                              <path
+                                   d="M15.502 1.94a.5.5 0 0 1 0 .706L14.459 3.69l-2-2L13.502.646a.5.5 0 0 1 .707 0l1.293 1.293zm-1.75 2.456-2-2L4.939 9.21a.5.5 0 0 0-.121.196l-.805 2.414a.25.25 0 0 0 .316.316l2.414-.805a.5.5 0 0 0 .196-.12l6.813-6.814z" />
+                              <path fill-rule="evenodd"
+                                   d="M1 13.5A1.5 1.5 0 0 0 2.5 15h11a1.5 1.5 0 0 0 1.5-1.5v-6a.5.5 0 0 0-1 0v6a.5.5 0 0 1-.5.5h-11a.5.5 0 0 1-.5-.5v-11a.5.5 0 0 1 .5-.5H9a.5.5 0 0 0 0-1H2.5A1.5 1.5 0 0 0 1 2.5v11z" />
+                         </svg>
+                    </button>
+
+               </div>
+               <div class="symbol1">
+<i class="fa-regular fa-o" style="color: #5492ff;"></i>               </div>
+          </div>
+        
+          <div class="playerBox">
+               <div class="player1">
+                    <input type="text" name="player1" id="name2" value="Player 2" disabled>
+
+<button id="edit2">
+     <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-pencil-square"
+          viewBox="0 0 16 16">
+          <path
+               d="M15.502 1.94a.5.5 0 0 1 0 .706L14.459 3.69l-2-2L13.502.646a.5.5 0 0 1 .707 0l1.293 1.293zm-1.75 2.456-2-2L4.939 9.21a.5.5 0 0 0-.121.196l-.805 2.414a.25.25 0 0 0 .316.316l2.414-.805a.5.5 0 0 0 .196-.12l6.813-6.814z" />
+          <path fill-rule="evenodd"
+               d="M1 13.5A1.5 1.5 0 0 0 2.5 15h11a1.5 1.5 0 0 0 1.5-1.5v-6a.5.5 0 0 0-1 0v6a.5.5 0 0 1-.5.5h-11a.5.5 0 0 1-.5-.5v-11a.5.5 0 0 1 .5-.5H9a.5.5 0 0 0 0-1H2.5A1.5 1.5 0 0 0 1 2.5v11z" />
+     </svg>
+</button>
+
+               </div>
+               <div class="symbol1">
+                    <i style="color:#ff5454;" class="fa-solid fa-x"></i>
+                   </div>
+
+               </div>
+          </div>
+     </div>
+
+
+     <div class="playarea">
+
+          <div class="board">
+
+               <table class="bb-0 bl-0 br-0">
+                    <tr  class="bb-0 bl-0 br-0">
+                         <td id="1 1" class="bl-0"></td>
+                         <td  id="1 2"></td>
+                         <td  id="1 3" class=" br-0"></td>
+                    </tr>
+                    <tr class="bb-0 bl-0 br-0" >
+                         <td id="2 1"  class="bl-0"></td>
+                         <td id="2 2"></td>
+                         <td id="2 3" class=" br-0"></td>
+                    </tr>
+                    <tr  class="bb-0 bl-0 br-0">
+                         <td id="3 1 " class="bb-0 bl-0" ></td>
+                         <td id="3 2" class="bb-0"></td>
+                         <td id="3 3" class="bb-0 br-0"></td>
+                    </tr>
+               </table>
+
+          </div>
+
+<div class="winmsg">
+     <div class="msg">
+          <span></span>
+          <button onclick="initGame()">Restart</button>
+     </div>
+</div>
+
+
+     </div>
+ 
+
+
+<script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4="
+     crossorigin="anonymous"></script>
+     <script src="/app.js"></script>
+</body>
+</html>
