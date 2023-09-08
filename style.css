@@ -59,6 +59,22 @@ body {
   scale: 1.1;
 }
 
+.hambug {
+  position: absolute;
+  right: 0;
+  height: 100%;
+  display: none;
+  width: 2rem;
+  align-items: center;
+  cursor: pointer;
+}
+.hambug svg {
+  font-size: 8rem;
+}
+
+.slide {
+  display: none;
+}
 .heading {
   height: 20%;
   display: flex;

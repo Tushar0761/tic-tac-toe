@@ -146,3 +146,14 @@ $("td").click(function (e) {
 
   // position($(e.target).attr("id"))
 });
+
+let resize = function () {
+  if (window.innerWidth < 700) {
+    $(".last").hide();
+  } else {
+    $(".last").show("fast");
+  }
+};
+$(document).ready(resize);
+
+window.onresize = resize;
